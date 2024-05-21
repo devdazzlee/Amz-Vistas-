@@ -1,0 +1,141 @@
+.navbar {
+    color: white;
+    position: fixed;
+    width: 100%;
+   
+    padding: 10px 0;
+    /* background: white; */
+    background:  linear-gradient(180deg, rgba(250, 152, 0, 1) 0%, rgba(223, 123, 1, 1) 100%); 
+  }
+  
+
+
+  
+  
+  /* Existing styles... */
+.mb-dropdown{
+  display: none;
+}
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: max-content;
+    left: 0;
+    padding: 10px;
+    background-color: black;
+    z-index: 1;
+  }
+  .dropdown > li {
+    margin-bottom: 14px;
+  }
+  .nested-dropdown {
+    display: none;
+    position: absolute;
+    width: max-content;
+    top: 0;
+    left: 100%;
+    padding: 20px;
+    background-color: black;
+    z-index: 2;
+  }
+  .nested-dropdown > li {
+    margin-bottom: 14px;
+  }
+  .navbar-links > li:hover .dropdown {
+    display: block;
+  }
+  
+  .nested-dropdown-container:hover .nested-dropdown {
+    display: block;
+  }
+  /* Existing styles... */
+  
+  .navbar-container {
+    display: flex;
+    z-index: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  .navbar-hamburger {
+    display: none; /* Hide by default on larger screens */
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  .navbar-links {
+    margin-right: 25px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navbar-links li {
+    position: relative;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    z-index: 1;
+  }
+  
+  /* .navbar-links li:hover .dropdown {
+    display: block;
+  }
+   */
+  @media (max-width: 768px) {
+.with-dropdown{
+  display: none;
+}
+    .navbar-container {
+      justify-content: space-between;
+    }
+    
+    .mb-dropdown{
+      display: block;
+    }
+
+
+    .navbar-hamburger {
+      display: block;
+      margin-right: 15px;
+    }
+  
+    .navbar-links {
+      display: none;
+      z-index: 41;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background:  rgba(250, 152, 0, 1) 
+    }
+  
+    .navbar-links.mobile-menu-open {
+      display: flex;
+    }
+  
+    .navbar-links li {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar-links li:hover .dropdown {
+      display: none;
+    }
+  }
+  

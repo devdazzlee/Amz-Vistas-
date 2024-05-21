@@ -1,0 +1,192 @@
+.main-Offer-card {
+    padding: 20px 0px;
+    margin: 0 auto; /* Center the content */
+    max-width: 1100px; /* Set a maximum width for better responsiveness */
+  }
+  
+  .Offer-card {
+    width:90%;
+    border-radius: 10px;
+    border: 1px solid #FF9D1D;
+    padding: 40px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: center;
+  }
+
+  .Offer-card h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .Offer-card p {
+    font-size: 16px;
+    color: #333;
+  }
+  .Shopify-card {
+    width: 350px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 40px;
+    margin-right: 20px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    text-align: center;
+  }
+
+  .Shopify-card h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .Shopify-card p {
+    font-size: 16px;
+    color: #333;
+  }
+  .Services-card {
+    width: 310px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 40px;
+    margin-right: 20px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    text-align: center;
+  }
+  .Services-card:hover {
+    width: 310px;
+    background-color: #171823;
+    border: 1px solid #ccc;
+    color: white;
+    padding: 40px;
+    margin-right: 20px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    text-align: center;
+  }
+  .Services-card h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .Services-card p {
+    font-size: 16px;
+    color: #333;
+  }
+  .Services-card:hover h1 {
+    color: white; /* Change heading color to white on hover */
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .Services-card:hover p {
+    color: white; /* Change paragraph color to white on hover */
+    font-size: 16px;
+  }
+
+  .Services-card-caro {
+    height: 23.4rem;
+    width: 310px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 40px;
+    margin-right: 20px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    text-align: center;
+  }
+  .Services-card-caro:hover {
+    width: 310px;
+    background-color: #171823;
+    border: 1px solid #ccc;
+    color: white;
+    padding: 40px;
+    margin-right: 20px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    text-align: center;
+  }
+  .Services-card-caro h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .Services-card-caro p {
+    font-size: 16px;
+    color: #333;
+  }
+  .Services-card-caro:hover h1 {
+    color: white; /* Change heading color to white on hover */
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .Services-card-caro:hover p {
+    color: white; /* Change paragraph color to white on hover */
+    font-size: 16px;
+  }
+
+
+
+
+  .Offer-card-upscaling {
+    margin-top: 10px ;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid #FF9D1D;
+    padding: 40px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: center;
+  }
+  .Offer-card-upscaling h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .Offer-card-upscaling p {
+    font-size: 16px;
+    color: #333;
+  }
+  .Offer-card-support {
+display: flex;
+flex-direction: column;
+    width: 80%;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 40px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: center;
+  }
+
+  .Offer-card-support h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+ 
+  
+  @media (max-width: 768px) {
+    .Offer-card {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    .Offer-card-upscaling{
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    .Shopify-card{
+      margin-right : 0px;
+      margin-bottom: 20px;
+      width: 100%; /* Make the card full width on small screens */
+      box-shadow: none; /* Remove the box shadow on small screens */
+    }
+    .Services-card{
+      margin-right : 0px;
+      margin-bottom: 20px;
+      box-shadow: none; /* Remove the box shadow on small screens */
+    }
+    .Services-card-caro{
+      margin-right : 0px;
+      margin-bottom: 20px;
+      width: 100%; /* Make the card full width on small screens */
+      box-shadow: none; /* Remove the box shadow on small screens */
+    }
+
+
+
+
+  }
+  

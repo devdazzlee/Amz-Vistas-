@@ -1,0 +1,21 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: Googlebot
+Allow: /
+User-agent: APIs-Google
+Allow: /
+User-agent: Mediapartners-Google
+Allow: /
+User-agent: AdsBot-Google-Mobile
+Allow: /
+User-agent: AdsBot-Google
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+User-agent: Googlebot-News
+Allow: /
+User-agent: Googlebot-Video
+Allow: /
+User-agent: Storebot-Google
+Allow: /
+
+Sitemap: https://amzvistas.com/sitemap.xml

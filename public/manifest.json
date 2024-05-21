@@ -1,0 +1,57 @@
+{
+  "short_name": "AmzVistas",
+  "name": "AmzVistas - Your Trusted Partner for Amazon Services",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "Amzvistas.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "Amzvistas.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#3366FF",
+  "background_color": "#ffffff",
+  "description": "AmzVistas offers comprehensive Amazon services, including FBA setup, store assistance, customization, listing optimization, analytics, dropshipping, niche selection, supplier management, and visual ads. Boost your Amazon business with AmzVistas!",
+  "keywords": "Amazon services, FBA setup, store assistance, customization, listing optimization, analytics, dropshipping, niche selection, supplier management, visual ads, Amazon consultants, Amazon experts, Amazon storefront design, Amazon PPC management",
+  "orientation": "portrait",
+  "prefer_related_applications": false,
+  "screenshots": [
+    {
+      "src": "Amzvistaslogo1.png",
+      "sizes": "1280x720",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "Amzvistaslogo2.png",
+      "sizes": "1280x720",
+      "type": "image/jpeg"
+    }
+  ],
+  "tags": [
+    "Amazon services",
+    "Amazon FBA",
+    "dropshipping",
+    "Amazon storefront design",
+    "listing optimization",
+    "Amazon PPC",
+    "virtual assistant services",
+    "Amazon consultants",
+    "Amazon experts",
+    "ecommerce solutions",
+    "online business optimization",
+    "US-based Amazon services",
+    "trusted Amazon partners"
+  ],
+  "lang": "en-US"
+}

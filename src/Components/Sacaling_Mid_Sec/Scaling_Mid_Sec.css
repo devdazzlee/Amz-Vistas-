@@ -1,0 +1,13 @@
+@media only screen and (max-width: 640px) {
+    .Number_Card{
+        flex-direction: column;
+    }
+    .elementor-field{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+  }
+  
