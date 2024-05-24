@@ -34,7 +34,7 @@ const  Virtual_Assistant_Banner = () => {
 
     try {
       // Make API call using Axios
-      const response = await axios.post('https://thankful-teal-octopus.cyclic.app/api/messages', formData);
+      const response = await axios.post('https://amzvistas-backend.vercel.app/api/messages', formData);
       console.log('API response:', response.data);
 
       // Handle success (optional)
