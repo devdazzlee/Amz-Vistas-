@@ -17,11 +17,15 @@ const CONTACTus = () => {
     <link rel="canonical" href="https://www.amzvistas.com/Contact-us" />
 </Helmet>
 
+
+
+
+
    <Navbar /> 
    <Banner_Contact />
    <Contact_Form/>
    <Supporter />
-      <Footer />
+   <Footer />
     
     </>
   )

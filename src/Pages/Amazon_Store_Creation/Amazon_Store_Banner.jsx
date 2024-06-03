@@ -3,12 +3,36 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 const  Amazon_Store_Banner = () => {
 
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    if (showPopup) {
+      const timeout = setTimeout(() => {
+        setShowPopup(false);
+      }, 5000);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [showPopup]);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     textarea: '',
     number : ''
   });
+  const [isChecked, setIsChecked] = useState({
+    consent1: false,
+    consent2: false
+  });
+
+  const handleCheckboxChange = (e) => {
+    const { name, checked } = e.target;
+    setIsChecked(prevState => ({
+      ...prevState,
+      [name]: checked
+    }));
+  };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -22,12 +46,14 @@ const  Amazon_Store_Banner = () => {
     e.preventDefault();
 
     // Validate form inputs
-    // Validate form inputs
     if (!formData.name || !formData.email ||!formData.number ||  !formData.textarea) {
       alert('Please fill out all fields before submitting.');
       return;
     }
-
+ if (!isChecked.consent1 || !isChecked.consent2) {
+          alert('Please provide consent by checking both boxes before submitting.');
+          return;
+        }
 
     // Process the form submission logic here
     console.log('Form submitted:', formData);
@@ -39,23 +65,31 @@ const  Amazon_Store_Banner = () => {
 
       // Handle success (optional)
       alert('Your Message has been successfully sent!');
+
       setFormData({
         name: '',
         email: '',
         textarea: '',
         number: '',
-      }); 
+      });  
+      setIsChecked({
+        consent1: false,
+        consent2: false
+      }); // Reset checkboxes
+
+
     } catch (error) {
       console.error('Error sending message:', error);
       alert('There was an error sending your message. Please try again later.');
     }
   };
 
+
   return (
-    <div style={{ background: '#232F3F' ,  paddingTop : "40px" }} className='main-banner h-auto'>
+    <div style={{ background: '#232F3F' }} className='main-banner h-auto'>
 
       <div className="w-full container mx-auto md:px-6">
-        <div className="flex flex-col md:flex-row justify-between py-6 md:py-24 animation-from-left">
+        <div className="flex flex-col md:flex-row justify-between py-6 md:py-24 animation-from-left items-center">
 
         <div  className="md:mt-0 mt-11 fade-up-element mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
             <h2 className="mb-6 text-3xl text-white font-bold">
@@ -157,6 +191,32 @@ value={formData.textarea}
 onChange={handleInputChange}
 
 />
+<div className='flex items-start'>
+          <input
+            className='block mt-1 mr-2'
+            type="checkbox"
+            name="consent1"
+            checked={isChecked.consent1}
+            onChange={handleCheckboxChange}
+          />
+          <p className='font-semibold block  text-start text-sm'>
+            By providing a telephone number and submitting this form you are consenting to be contacted by SMS text message. Message & data rates may apply. You can reply STOP to opt-out of further messaging.
+          </p>
+        </div>
+
+        <div className='flex items-start my-2'>
+          <input
+            className='block mt-1 mr-2'
+            type="checkbox"
+            name="consent2"
+            checked={isChecked.consent2}
+            onChange={handleCheckboxChange}
+          />
+          <p className='font-semibold block xl:w-72 text-start text-sm'>
+            I consent to receive SMS/MMS messages from Amz Vistas
+          </p>
+        </div>
+
 
               </div>
 

@@ -23,6 +23,18 @@ const Banner = () => {
     textarea: '',
     number : ''
   });
+  const [isChecked, setIsChecked] = useState({
+    consent1: false,
+    consent2: false
+  });
+
+  const handleCheckboxChange = (e) => {
+    const { name, checked } = e.target;
+    setIsChecked(prevState => ({
+      ...prevState,
+      [name]: checked
+    }));
+  };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -40,7 +52,10 @@ const Banner = () => {
       alert('Please fill out all fields before submitting.');
       return;
     }
-
+ if (!isChecked.consent1 || !isChecked.consent2) {
+          alert('Please provide consent by checking both boxes before submitting.');
+          return;
+        }
 
     // Process the form submission logic here
     console.log('Form submitted:', formData);
@@ -59,6 +74,11 @@ const Banner = () => {
         textarea: '',
         number: '',
       });  
+      setIsChecked({
+        consent1: false,
+        consent2: false
+      }); // Reset checkboxes
+
 
     } catch (error) {
       console.error('Error sending message:', error);
@@ -153,6 +173,31 @@ value={formData.textarea}
 onChange={handleInputChange}
 
 />
+<div className='flex items-start'>
+          <input
+            className='block mt-1 mr-2'
+            type="checkbox"
+            name="consent1"
+            checked={isChecked.consent1}
+            onChange={handleCheckboxChange}
+          />
+          <p className='font-semibold block  text-start text-sm'>
+            By providing a telephone number and submitting this form you are consenting to be contacted by SMS text message. Message & data rates may apply. You can reply STOP to opt-out of further messaging.
+          </p>
+        </div>
+
+        <div className='flex items-start my-2'>
+          <input
+            className='block mt-1 mr-2'
+            type="checkbox"
+            name="consent2"
+            checked={isChecked.consent2}
+            onChange={handleCheckboxChange}
+          />
+          <p className='font-semibold block xl:w-72 text-start text-sm'>
+            I consent to receive SMS/MMS messages from Amz Vistas
+          </p>
+        </div>
 
               </div>
 
