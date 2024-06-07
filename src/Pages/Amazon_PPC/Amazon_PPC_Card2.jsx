@@ -14,7 +14,7 @@ const Amazon_PPC_Card2 = () => {
       <h2 className="mb-6 text-3xl text-black font-bold">
         <span className='mb-6'>AMAZON PPC <br />
 AMZ Vistas – Among The Leading Amazon PPC Agencies</span></h2>
-      <p className="mb-6 text-black dark:text-neutral-300">
+      <p className="mb-6 text-black  ">
       AMZ Vistas makes sure that organizations achieve their marketing objectives by implementing clever ad placement and strategically utilizing Amazon PPC. We love to see your products appear in the searches of your target market with the help of our Amazon PPC management service. With our PPC Amazon solution, you may get the following:
       </p>
 

@@ -21,7 +21,7 @@ const Amazon_Card = () => {
     <div className="fade-from-right element-to mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
       <h2 className="mb-6 text-3xl text-black font-bold">
         <span className='mb-6'>SCALE A PROFITABLE BUSINESS WITH AMAZON FBA AUTOMATION</span></h2>
-      <p className="mb-6 text-black dark:text-neutral-300">
+      <p className="mb-6 text-black  ">
       It's time to leverage the power of Amazon FBA and make most of your online sales. In simplest terms, you have to send the inventory and watch the show; we'll handle the rest. FBA management incorporates the following areas:
       </p>
 

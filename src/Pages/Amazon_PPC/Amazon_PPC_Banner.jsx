@@ -1,9 +1,9 @@
 import React, { useEffect , useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { Circles } from 'react-loader-spinner';
 const  Amazon_PPC_Banner = () => {
-
-  
+  const [isLoading, setIsLoading] = useState(false); // State to track loading status
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
@@ -55,9 +55,9 @@ const  Amazon_PPC_Banner = () => {
           alert('Please provide consent by checking both boxes before submitting.');
           return;
         }
-
+        setIsLoading(true);
     // Process the form submission logic here
-    console.log('Form submitted:', formData);
+ 
 
     try {
       // Make API call using Axios
@@ -82,8 +82,12 @@ const  Amazon_PPC_Banner = () => {
     } catch (error) {
       console.error('Error sending message:', error);
       alert('There was an error sending your message. Please try again later.');
+    } finally {
+      // Set loading to false after form submission is complete
+      setIsLoading(false);
     }
   };
+
 
   return (
     <div style={{ background: '#232F3F'  }} className='main-banner h-auto'>
@@ -94,7 +98,7 @@ const  Amazon_PPC_Banner = () => {
 
             <h2 className="mb-6 text-3xl text-white font-bold">
               <span className='mb-6'>AMAZON PPC AGENCY COMPLETE MANAGEMENT SCALING FOR YOU</span></h2>
-            <p className="mb-6 text-white dark:text-neutral-300">
+            <p className="mb-6 text-white  ">
             The Amazon PPC agency AMZ Vistas keeps firms up-to-date by curbing excessive expenses, reducing competition, and tailoring ads to specific objectives. In order to ensure that our campaigns function at their peak, we design, build, audit, and optimize them as if we were going to get them wrong the first time. Our Amazon PPC agency provides the following:
             </p> 
        <div className='flex flex-wrap text-white w-3/4	mb-4 justify-between' >
@@ -126,7 +130,7 @@ const  Amazon_PPC_Banner = () => {
           <form className="px-4"   onSubmit={handleSubmit}   >
           <div className='flex flex-col justify-center text-center'>
                 <h2 style={{ color: '#000000' }} className="mb-2 text-xl font-bold">Let's discuss your   project</h2>
-                <p className="w-full mb-6 text-black dark:text-neutral-300">
+                <p className="w-full mb-6 text-black  ">
                 Increase your Amazon store sales with our proven marketing strategies.
 
                 </p>
@@ -138,7 +142,7 @@ const  Amazon_PPC_Banner = () => {
  id="name"
  autoComplete="given-name"
  placeholder="Full Name"
- className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+ className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md  sm:mb-0"
  name="name"
  value={formData.name}
  onChange={handleInputChange}
@@ -152,7 +156,7 @@ const  Amazon_PPC_Banner = () => {
                  id="email"
                  autoComplete="email"
                  placeholder="Email Address"
-                 className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                 className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md  sm:mb-0"
                  name="email"
                  value={formData.email}
                  onChange={handleInputChange}
@@ -165,7 +169,7 @@ const  Amazon_PPC_Banner = () => {
                  id="Phone Number"
                  autoComplete="Phone Number"
                  placeholder="Phone Number"
-                 className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                 className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md  sm:mb-0"
                  name="number"
                  value={formData.number}
                  onChange={handleInputChange}
@@ -179,7 +183,7 @@ id="textarea"
 name="textarea"
 rows="3"
 placeholder="Write your message..."
-className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md  sm:mb-0"
 value={formData.textarea}
 onChange={handleInputChange}
 
@@ -212,13 +216,27 @@ onChange={handleInputChange}
               </div>
 
               <button
-                 type="submit"
-                style={{ background: '#000000' }}
-                data-te-ripple-init
-                data-te-ripple-color="light"
-                className="neon-button mb-6 inline-block w-full rounded px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
-                Get Free Consultation 
-              </button>
+        type="submit"
+        style={{ background: '#000000' }}
+        data-te-ripple-init
+        data-te-ripple-color="light"
+        className="neon-button mb-6 inline-block w-full rounded px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+        disabled={isLoading}
+      >
+        {isLoading ? (
+          <Circles
+            height="20"
+            width="20"
+            color="#ffffff"
+            ariaLabel="circles-loading"
+            wrapperStyle={{ display: 'inline-block' }}
+            wrapperClass=""
+            visible={true}
+          />
+        ) : (
+          'Get Free Consultation'
+        )}
+      </button>
             </form>
           </div>
 

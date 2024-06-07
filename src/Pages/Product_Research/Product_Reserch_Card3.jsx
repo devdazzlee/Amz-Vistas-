@@ -52,10 +52,10 @@ const Product_Reserch_Card3 = () => {
     <div className="left-side mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
       <h2 className="mb-6 text-3xl text-black font-bold">
         <span className='mb-6'>Profitability Analysis</span></h2>
-      <p className="mb-6 text-black dark:text-neutral-300">
+      <p className="mb-6 text-black">
       Profit margin analysis is at the forefront of our product hunting strategy to make sure brands capitalize on the right products. We study the margins keeping in check supplier restrictions, logistics costs, BSR, and performance reviews.
       </p>
-      <div className='flex mt-2 flex-wrap text-black w-3/4	mb-4 justify-between' >
+      <div className='flex mt-2 flex-wrap text-black w-3/4 mb-4 justify-between' >
            <ul>
               <li   className='mb-2' ><i style={{color: "transparent", WebkitBackgroundClip: "text", backgroundImage: "linear-gradient(180deg, rgba(250, 152, 0, 1) 0%, rgba(223, 123, 1, 1) 100%)"}} class="fa fa-check-circle mr-2" aria-hidden="true"></i> Price comparison</li>
               <li   className='mb-2' ><i style={{color: "transparent", WebkitBackgroundClip: "text", backgroundImage: "linear-gradient(180deg, rgba(250, 152, 0, 1) 0%, rgba(223, 123, 1, 1) 100%)"}} class="fa fa-check-circle mr-2" aria-hidden="true"></i>Sustainable demand</li>

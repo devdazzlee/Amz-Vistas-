@@ -51,7 +51,7 @@ const Ebc_Card = () => {
     <div className="left-side mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
       <h2 className="mb-6 text-3xl text-black font-bold">
         <span className='mb-6'>EBC CONTENT/A+ CONTENT</span></h2>
-      <p className="mb-6 text-black dark:text-neutral-300">
+      <p className="mb-6 text-black  ">
       With the right text placements and enhanced images, brands can now set their voice and communicate their unique value proposition offerings. A+ /EBC Content organizes information strategically with precise points and powerful product descriptions.
       </p>
 

@@ -50,7 +50,7 @@ const Product_Reserch_Card = () => {
     <div className="left-side mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
       <h2 className="mb-6 text-3xl text-black font-bold">
         <span className='mb-6'>Product Research</span></h2>
-      <p className="mb-6 text-black dark:text-neutral-300">
+      <p className="mb-6 text-black  ">
       At AMZ Vistas, we analyze data to find the most suitable product opportunities on Amazon. We find accurate estimates of demand, study competition, brand restrictions, and search volume before presenting your ‘winning’ product to you.
       </p>
 

@@ -12,10 +12,10 @@ const Product_Reserch_Card4 = () => {
   <div className="mt-20 md:mt-0 left-side mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
       <h2 className="mb-6 text-3xl text-black font-bold">
         <span className='mb-6'>Keyword Research</span></h2>
-      <p className="mb-6 text-black dark:text-neutral-300">
+      <p className="mb-6 text-black ">
       We are thorough in our Amazon keyword research plans and aim for low-competition and high-opportunity search queries. We think from a buyer’s perspective and design keyword listings based on their interests and behaviors.
       </p>
-      <p className="mb-6 text-black dark:text-neutral-300">
+      <p className="mb-6 text-black ">
       With AMZ Vistas, you leverage an increased sales volume with better visibility of your product listings on Amazon.
       </p>
      

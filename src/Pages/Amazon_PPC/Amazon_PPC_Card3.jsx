@@ -52,7 +52,7 @@ const Amazon_PPC_Card3 = () => {
     <div className="left-side mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
       <h2 className="mb-6 text-3xl text-black font-bold">
         <span className='mb-6'>AMAZON SEO</span></h2>
-      <p className="mb-6 text-black dark:text-neutral-300">
+      <p className="mb-6 text-black  ">
       Another Amazon PPC service is our goal to position brands not just in search results but in the brains of their target market. We do this by installing positive impacts on the products and ultimately reach our goal of visibility and branding by optimizing listings and rankings. A cure for stumped businesses is PPC advertising Amazon ranks.
       </p>
       <div className='flex mt-2 flex-wrap text-black w-3/4	mb-4 justify-between' >

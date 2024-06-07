@@ -53,7 +53,7 @@ const Content_Strategizing = () => {
           <img src={Image2} alt="Amz Vistas Content Strategy Implementation" className='mb-4 sm:mb-0 sm:mr-4 faded-top-animate' />
           <img src={Image3} alt="Amz Vistas Content Strategy Analysis" className='mb-4 sm:mb-0 faded-top-animate' />
         </div>
-        <div className='flex mt-4'>
+        <div className='flex flex-col sm:flex-row justify-center items-center mt-4 '>
         <img src={Image4} alt="Amz Vistas Content Strategy Consulting" className='mr-4 faded-top-animate' />
       <img src={Image5} alt="Amz Vistas Content Strategy Development" className='mr-4 faded-top-animate' />
       <img src={Image6} alt="Amz Vistas Content Strategy Optimization" className='mr-4 faded-top-animate' />

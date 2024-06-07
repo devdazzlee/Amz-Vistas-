@@ -10,6 +10,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 import img from '../../Images/svgexport-1.svg';
+import { Circles } from 'react-loader-spinner';
 
 const style = {
   position: 'absolute',
@@ -25,6 +26,7 @@ const style = {
 };
 
 export default function BasicModal() {
+  const [isLoading, setIsLoading] = useState(false); // State to track loading status
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -53,30 +55,49 @@ export default function BasicModal() {
     }));
   };
 
-  const handleSubmit = async () => {
-    if (!isChecked.consent1 || !isChecked.consent2) {
-      alert('Please provide consent by checking both boxes before submitting.');
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Validate form inputs
+    if (!formData.name || !formData.email ||!formData.number ||  !formData.textarea) {
+      alert('Please fill out all fields before submitting.');
       return;
     }
+ if (!isChecked.consent1 || !isChecked.consent2) {
+          alert('Please provide consent by checking both boxes before submitting.');
+          return;
+        }
+        setIsLoading(true);
+    // Process the form submission logic here
+ 
 
     try {
+      // Make API call using Axios
       const response = await axios.post('https://amzvistas-backend.vercel.app/api/messages', formData);
-      alert('Form submitted successfully!');
+      console.log('API response:', response.data);
+
+      // Handle success (optional)
+      alert('Your Message has been successfully sent!');
       handleClose();
       setFormData({
         name: '',
         email: '',
         textarea: '',
-        number: ''
-      }); // Reset form fields
+        number: '',
+      });  
       setIsChecked({
         consent1: false,
         consent2: false
       }); // Reset checkboxes
+
+
     } catch (error) {
       handleClose();
-      console.error('Error sending data:', error);
-      alert('Error sending message');
+      console.error('Error sending message:', error);
+      alert('There was an error sending your message. Please try again later.');
+    } finally {
+      // Set loading to false after form submission is complete
+      setIsLoading(false);
     }
   };
 
@@ -174,14 +195,29 @@ export default function BasicModal() {
                   I consent to receive SMS/MMS messages from Amz Vistas.
                   </label>
                 </div>
+
+
                 <button
                   onClick={handleSubmit}
+                  disabled={isLoading}
                   className='form-button-full md:w-full w-full text-white font-bold py-2 px-4 rounded-full'
                   style={{
                     background: 'linear-gradient(rgb(250, 152, 0) 0%, rgb(223, 123, 1) 100%)'
                   }}
                 >
-                  CONTACT WITH US
+                {isLoading ? (
+                  <Circles
+                    height="20"
+                    width="20"
+                    color="#ffffff"
+                    ariaLabel="circles-loading"
+                    wrapperStyle={{ display: 'inline-block' }}
+                    wrapperClass=""
+                    visible={true}
+                  />
+                ) : (
+                  'Get Free Consultation'
+                )}
                 </button>
                 <ToastContainer />
               </div>

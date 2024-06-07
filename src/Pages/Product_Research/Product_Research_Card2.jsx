@@ -12,7 +12,7 @@ const  Product_Research_Card2 = () => {
   <div className="mt-20 md:mt-0 left-side mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
       <h2 className="mb-6 text-3xl text-black font-bold">
         <span className='mb-6'>Niche Analysis</span></h2>
-      <p className="mb-6 text-black dark:text-neutral-300">
+      <p className="mb-6 text-black  ">
       To cut through product competition, AMZ Vistas does a bit of elbow grease to curate the perfect product niche for e-commerce brands. We exploit the big to make small but powerful impacts in the segmented market, with the right niche and product selection.
       </p>
 

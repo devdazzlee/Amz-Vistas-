@@ -115,6 +115,7 @@
     }
   
     .navbar-links {
+      padding: 10px 10px;
       display: none;
       z-index: 41;
       flex-direction: column;
@@ -122,7 +123,7 @@
       top: 80px;
       left: 0;
       width: 100%;
-      background:  rgba(250, 152, 0, 1) 
+      background:  rgba(223, 123, 1, 1);
     }
   
     .navbar-links.mobile-menu-open {

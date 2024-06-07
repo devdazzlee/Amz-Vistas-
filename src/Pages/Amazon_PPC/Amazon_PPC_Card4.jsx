@@ -13,7 +13,7 @@ const Amazon_PPC_Card4 = () => {
   <div className="mt-20 md:mt-0 left-side mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
       <h2 className="mb-6 text-3xl text-black font-bold">
         <span className='mb-6'>AMAZON SMM – AMAZON PPC MANAGEMENT AND SOCIAL MEDIA</span></h2>
-      <p className="mb-6 text-black dark:text-neutral-300">
+      <p className="mb-6 text-black  ">
       Our Amazon PPC services also include social media management to reach every active and potential customer base. We develop substantial social media marketing strategies for brands in order to fill the gap at the appropriate time and place. We cover the nuts and bolts of everything to position brands for consistent success, from organic marketing to paid targeting.
       </p>     
 

@@ -28,9 +28,9 @@ const ContactDiv = () => {
   }, []);
   return (
     <>
-      <div style={{ "background": "#1E2834" }} className='animate-bottom-call flex  m-auto my-16 p-8 md:w-9/12 sm:w-full'>
-        <div>
-          <h1 className=' text-4xl font-bold'>
+      <div style={{ "background": "#1E2834" }} className='animate-bottom-call flex items-center  m-auto my-16 p-8 md:w-9/12 sm:w-full'>
+        <div   >
+          <h1 className='md:text-4xl  text-3xl font-bold'>
           <span style={{
   backgroundImage: "linear-gradient(180deg, rgba(250, 152, 0, 1) 0%, rgba(223, 123, 1, 1) 100%)",
   WebkitBackgroundClip: "text",
@@ -46,17 +46,17 @@ const ContactDiv = () => {
 
 </p>
         </div>
-        <div className='w-96	  flex flex-col sm:flex-row justify-between items-center mt-4'>
+        <div className='	flex flex-col sm:flex-row justify-between items-center mt-4'>
 
         <Link onClick={openWhatsapp} target="_blank">
-  <button style={{  backgroundImage: "linear-gradient(180deg, rgba(250, 152, 0, 1) 0%, rgba(223, 123, 1, 1) 100%)", "color" : "#1E2834" , "fontFamily" : "sans-serif" , "width" : "max-content" }} className="neon-button ml-6 md:mt-0 mt-12  text-white font-bold py-6 px-8 rounded-xl">
+  <button style={{  backgroundImage: "linear-gradient(180deg, rgba(250, 152, 0, 1) 0%, rgba(223, 123, 1, 1) 100%)", "color" : "#1E2834" , "fontFamily" : "sans-serif" , "width" : "max-content" }} className="neon-button ml-6 md:mt-0 mt-12  text-white font-bold md:py-6 md:px-8 py-4  px-2 rounded-xl">
     Call Now   <i class="fa fa-phone " aria-hidden="true"></i>
   </button>
 </Link>
 
           <Link   to={'/Contact-us'}>
           
-          <button   style={{  backgroundImage: "linear-gradient(180deg, rgba(250, 152, 0, 1) 0%, rgba(223, 123, 1, 1) 100%)", "color" : "#1E2834" , "fontFamily" : "sans-serif" }} className="neon-button w-auto md:w-max   ml-6 md:mt-0 mt-12  text-white font-bold py-6 px-8 rounded-xl">
+          <button   style={{  backgroundImage: "linear-gradient(180deg, rgba(250, 152, 0, 1) 0%, rgba(223, 123, 1, 1) 100%)", "color" : "#1E2834" , "fontFamily" : "sans-serif" }} className="neon-button w-auto md:w-max   ml-6 md:mt-0 mt-12  text-white font-bold md:py-6 md:px-8 py-4  px-2 rounded-xl">
           Get A Quote <i class="fa-solid fa-message "></i>
               </button>
 

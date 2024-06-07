@@ -13,7 +13,7 @@ const Virtual_Assistant_Card2 = () => {
   <div className="mt-20 md:mt-0 left-side mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
       <h2 className="mb-6 text-3xl text-black font-bold">
         <span className='mb-6'>AMAZON VA; ACCOUNT FEEDBACK MANAGEMENT</span></h2>
-      <p className="mb-6 text-black dark:text-neutral-300">
+      <p className="mb-6 text-black ">
       We are one of the virtual assistant agencies that study and monitor Amazon account feedback to aid you in using industry-leading strategies and avoiding mistakes with product placement and listings. There are always momentous changing and detailing made to suit the clients' preferences here at AMZ Vistas.
       </p>
 

@@ -50,7 +50,7 @@ const Amazon_PPC_Card = () => {
     <div className="left-side mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
       <h2 className="mb-6 text-3xl text-black font-bold">
         <span className='mb-6'>AMAZON DIGITAL MARKETING</span></h2>
-      <p className="mb-6 text-black dark:text-neutral-300">
+      <p className="mb-6 text-black  ">
       Campaigns change over time, with the prior turning obsolete. Our routine includes keeping track of those developments and adjusting to them. Our Amazon digital marketing experts base their marketing strategies on outcome-driven and data-supported methodologies in order to keep expenses in check and manage bids for the best outcomes.
       </p>
 

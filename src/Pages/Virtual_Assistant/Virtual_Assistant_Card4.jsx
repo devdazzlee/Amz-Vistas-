@@ -12,7 +12,7 @@ const Virtual_Assistant_Card4 = () => {
   <div className="mt-20 md:mt-0 left-side mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
       <h2 className="mb-6 text-3xl text-black font-bold">
         <span className='mb-6'>ANALYTICS & REPORTING</span></h2>
-      <p className="mb-6 text-black dark:text-neutral-300">
+      <p className="mb-6 text-black ">
       We evaluate and report the performance of accounts, including their listings, categorization information, inventory level checks, content, and central seller accounts, as your dependable Amazon virtual assistant and account manager. We provide useful insight to make decisions taking into consideration account analytics and performance statistics.
       </p>     
 

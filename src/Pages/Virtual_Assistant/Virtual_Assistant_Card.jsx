@@ -53,7 +53,7 @@ const Virtual_Assistant_Card = () => {
     <div className="left-side mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
       <h2 className="mb-6 text-3xl text-black font-bold">
         <span className='mb-6'>AMAZON VA; INVENTORY MANAGEMENT</span></h2>
-      <p className="mb-6 text-black dark:text-neutral-300">
+      <p className="mb-6 text-black ">
       To automate your inventory, we consider the relevant factors and recommend fulfillment solutions. Amazon's virtual assistant is a great means to gradually scale your business on the world's largest e-commerce platform.
       </p>
 

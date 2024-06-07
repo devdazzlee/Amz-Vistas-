@@ -50,7 +50,7 @@ const Virtual_Card3 = () => {
     <div className="left-side mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
       <h2 className="mb-6 text-3xl text-black font-bold">
         <span className='mb-6'>BRAND REGISTRY</span></h2>
-      <p className="mb-6 text-black dark:text-neutral-300">
+      <p className="mb-6 text-black ">
       Our Virtual Assistant services alleviate your concern about Amazon brand registration since we have focused our efforts on process management. We meticulously handle paperwork and registry requirements and protect critical info for brands.
       </p>
       <div className='flex mt-2 flex-wrap text-black w-3/4	mb-4 justify-between' >
